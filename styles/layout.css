@@ -1,0 +1,168 @@
+*{
+	margin:0;
+	padding:0;
+	}
+	
+@font-face{
+	font-family: "antique";
+	src:url("../font/antique_book_cover.otf")}
+
+@font-face{
+	font-family: "Amanda";
+	src:url("../font/Amanda.otf")}
+
+@font-face{
+	font-family: "orange";
+	src:url("../font/orange juice 2.0.ttf")}
+
+@font-face{
+	font-family: "anne";
+	src:url("../font/Penelope Anne.ttf")}
+	
+a{
+	color : white;
+	text-decoration :none; 
+}
+.blanc{ color: black !important;}
+
+
+p{font-family: Amanda}
+
+h1{
+	margin: 0.6em 1em 0.4em 2em;
+	color: white; 
+	text-align:center;
+	text-shadow: 0 0 20px #DAA520;
+	font-family: antique;
+	font-size: 390%;
+}
+	
+h2{ font-size : 190%;
+	font-weight: bold;
+	font-family: Amanda;
+	color : #DAA520;
+	text-align:center;
+	margin-bottom: 0.8em}
+	
+	
+html {
+	background: url("../media/style.jpg") no-repeat center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin:0 auto;
+	max-width: 1600px}
+
+#grandmenu{ 
+	margin:0.8em 0;
+	background: black;
+	text-align: center; 
+	padding: 4px}
+ 
+#grandmenu li {  
+		font-weight:bold;
+		display: inline;  
+        list-style: none;  
+		padding: 4px;
+		background: black;
+		font-family:Amanda;
+		font-size: 130%;
+		color: white;
+		border-radius: 10px} 
+	
+#grandmenu li.selectionnable:hover {background:#DAA520}	
+	
+#grandmenu li.selectionnable:active{background: white}	
+
+#sommaire a {
+		color: white !important;
+        display:inline-block;  
+        margin: 0 15px}  
+
+			
+body div section {
+	padding:0.5em 1.5em 1em 1.5em;
+	margin : auto;
+	margin-bottom: 0.5em; 
+	background: rgba(255,255,255,0.9);
+	border-radius: 15px;
+	width: 60%;
+	max-width:700px !important;
+	text-align: justify}	
+	
+
+footer {
+	text-align: center;
+	margin: 1em 0}
+
+.prezi{width: 100%;
+		height: 400px}
+
+#fin{
+	color: white;
+	font-size: xx-large;
+	font-family: Amanda}
+
+#hoquet{width:100%;
+	}
+	
+	
+.imageleft{
+	float:left;
+	margin: 5px 10px 8px 0}
+	
+.imageright{
+	float:right;
+	margin: 5px 0 8px 10px}
+
+.nowrap{ 
+	white-space: nowrap;
+	}
+	
+
+@media only screen and (max-width: 680px){
+	
+	body div section{width: 70%}
+	
+	h1{ font-size: 270%;
+		text-align:center;
+		margin: 0.4em 1em 0.4em 1em}
+		
+	.prezi{
+		height: 300px}	
+
+}	
+
+@media only screen and (max-width: 515px) {
+
+	#grandmenu li {  
+		
+		font-size: 85%;
+		} 
+		
+	.prezi{	
+		height: 200px}	
+		
+	body div section{width: 77%}
+	
+	h1{
+	font-size: 160%;
+	display:block}
+	
+	h2{font-size: medium;
+	}
+	
+	p{ font-size: small}
+	
+	blockquote{display:none}
+	
+	.imageleft{
+		width: 60px;
+		height: auto !important}
+	
+	.non{ display:none;}
+	
+	#fin{
+		font-size: 100%;}
+}
